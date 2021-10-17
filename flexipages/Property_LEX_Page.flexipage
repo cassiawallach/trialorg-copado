@@ -69,42 +69,10 @@
                 <componentName>interaction_orchestrator:workGuide</componentName>
             </componentInstance>
         </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentName>forceContent:quipCard</componentName>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>height</name>
-                    <value>400</value>
-                </componentInstanceProperties>
-                <componentName>runtime_quip:quipNotifications</componentName>
-            </componentInstance>
-        </itemInstances>
         <name>main</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentName>fc_zillow:Zillow</componentName>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>configurationData</name>
-                    <value>{&quot;appBuilderConfig&quot;:{&quot;optionSelected&quot;:1},&quot;documentRecordFieldName&quot;:&quot;Quip_URL__c&quot;,&quot;linkSharingMode&quot;:&quot;edit&quot;}</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>height</name>
-                    <value>400</value>
-                </componentInstanceProperties>
-                <componentName>forceContent:embeddedQuipComponent</componentName>
-            </componentInstance>
-        </itemInstances>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
