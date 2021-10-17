@@ -25,6 +25,6 @@
     <siteAdmin>cwallach.trialorg@force.com</siteAdmin>
     <siteGuestRecordDefaultOwner>cwallach.trialorg@force.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
-    <subdomain>trialorgcommunity</subdomain>
+    <subdomain>trialorgcommunity2</subdomain>
     <urlPathPrefix>OKRPAP</urlPathPrefix>
 </CustomSite>
