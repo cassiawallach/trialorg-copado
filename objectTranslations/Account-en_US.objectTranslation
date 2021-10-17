@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Property</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Properties</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Property Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Property Names</value>
+        </caseValues>
+        <name>account_name</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Property Owner</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Property Owners</value>
+        </caseValues>
+        <name>account_owner</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Parent Building</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Parent Buildings</value>
+        </caseValues>
+        <name>parent_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Quip_URL --></label>
+        <name>Quip_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Property Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Maintenance</masterLabel>
+            <translation><!-- Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Listing</masterLabel>
+            <translation><!-- New Listing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Submitted</masterLabel>
+            <translation><!-- Offer Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rented</masterLabel>
+            <translation><!-- Rented --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Contract</masterLabel>
+            <translation><!-- Under Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vacant</masterLabel>
+            <translation><!-- Vacant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Currency Test --></label>
+        <name>rh2__testCurrency__c</name>
+    </fields>
+    <layouts>
+        <layout>Property Layout</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Child Account --></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>
