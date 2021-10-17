@@ -11,10 +11,10 @@
         <type>NavigationalTopic</type>
     </navigationMenuItem>
     <navigationMenuItem>
-        <label>TEST MENU ITEM</label>
+        <label>Create Ticket</label>
         <position>2</position>
         <publiclyAvailable>false</publiclyAvailable>
-        <target>NewAccount</target>
+        <target>NewCommunityCase</target>
         <type>GlobalAction</type>
     </navigationMenuItem>
 </NavigationMenu>
