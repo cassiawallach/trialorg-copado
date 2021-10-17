@@ -466,6 +466,26 @@
         <filterScope>Mine</filterScope>
         <label>My Contacts</label>
     </listViews>
+    <recordTypes>
+        <fullName>Agent</fullName>
+        <active>true</active>
+        <label>Agent</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Contractor</fullName>
+        <active>true</active>
+        <label>Contractor</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Lender</fullName>
+        <active>true</active>
+        <label>Lender</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Tenant</fullName>
+        <active>true</active>
+        <label>Tenant</label>
+    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
