@@ -28,6 +28,29 @@
     "regionName" : "featured",
     "type" : "region"
   }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "00B5f000008AVGVEA4",
+        "layout" : "COMPACT",
+        "pageSize" : 5,
+        "scope" : "Case",
+        "showActionBar" : true,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "eeb79565-5df3-492f-adba-0f7f3e2fe016",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
     "id" : "da17a477-4d50-4c82-b775-12509098394b",
     "regionName" : "content",
     "type" : "region"
