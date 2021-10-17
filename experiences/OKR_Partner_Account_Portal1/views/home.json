@@ -1,0 +1,89 @@
+{
+  "appPageId" : "e952f927-1109-45ad-bd14-928f23079aa6",
+  "componentName" : "siteforce:sldsTwoCol84SidebarFeaturedLayout",
+  "id" : "7c8162c2-d2f5-4e49-8249-a48e4fe637c9",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "A place where you can easily find solutions and ask questions",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Welcome!",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "4f2de4fc-5d1e-413f-8abd-1c17266c44ad",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ce2783d7-56c3-4c53-8ecd-a2d8dacd4212",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "2517fdfd-5dd5-4168-976c-4879356a6649",
+    "regionName" : "featured",
+    "type" : "region"
+  }, {
+    "id" : "da17a477-4d50-4c82-b775-12509098394b",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "channel" : "DefaultChannel",
+        "title" : ""
+      },
+      "componentName" : "forceCommunity:recommendations",
+      "id" : "02010563-6798-4c41-b9ca-74d59091288a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "display" : "LEVELS_POINTS",
+        "excludeInternalUsers" : false,
+        "knowledgeLabel" : "Knows about",
+        "numberOfUsers" : 5,
+        "showContextUser" : false,
+        "showTooltip" : false,
+        "showUserRank" : false,
+        "title" : "Leaderboard",
+        "tooltipText" : "Earn points and climb to new levels when you contribute in the experience!"
+      },
+      "componentName" : "forceCommunity:reputationLeaderboard42",
+      "id" : "309ae8f1-a72f-4e74-add7-bb8a131bdb54",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8cc1ffa7-daf4-4fc6-affd-00b01e3b2ac7",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "91e069da-93b3-4e1e-b16b-f63f3cdf119a",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "0cca081b-6d9e-40e2-83ac-213f8eab3cbc",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7a707868-f137-4800-8e57-a3c601a625ca",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Home",
+  "type" : "view",
+  "viewType" : "home"
+}
