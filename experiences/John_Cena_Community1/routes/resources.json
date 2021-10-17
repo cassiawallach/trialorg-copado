@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "777bcbf1-c23d-4302-9387-b5f0da2a837e",
+  "appPageId" : "c659277a-5616-4c6c-8b91-c474e926d8d5",
+  "configurationTags" : [ ],
+  "id" : "41628f0e-2ac2-4575-a4ad-855162811acd",
+  "label" : "Resources",
+  "pageAccess" : "UseParent",
+  "routeType" : "files",
+  "type" : "route",
+  "urlPrefix" : "files"
+}
