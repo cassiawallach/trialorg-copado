@@ -16781,6 +16781,347 @@
     <layoutAssignments>
         <layout>WorkTypeGroupMember-Work Type Group Member Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_AccountAddressBook__c-ccrz__CC Account Address Book Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_AccountGroupPriceList__c-ccrz__CC Account Group Price List Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_AccountGroup__c-ccrz__CC Account Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_AccountSetting__c-ccrz__CC Account Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_AddressBook__c-ccrz__CC Address Book Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_AttributeI18N__c-ccrz__CC AttributeI18N Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Attribute__c-ccrz__CC Attribute Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_BreadCrumb__c-ccrz__CC BreadCrumb Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_CartCoupon__c-ccrz__CC Cart Coupon Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_CartItemGroup__c-ccrz__Cart Item Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_CartItemPricingTier__c-ccrz__CC Cart Item Pricing Tier Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_CartItem__c-ccrz__CC Cart Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Cart__c-ccrz__CC Cart Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_CategoryI18N__c-ccrz__CC CategoryI18N Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_CategoryMedia__c-ccrz__CC Category Media Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_CategorySpec__c-ccrz__CC Category Spec Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Category__c-ccrz__CC Category Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_CompositeProduct__c-ccrz__CC Composite Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ConfigurationMeta__c-ccrz__CC Configuration Metadata Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ConfigurationModule__c-ccrz__CC Configuration Module Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Configuration__c-ccrz__CC Configuration Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ContactAddr__c-ccrz__CC Contact Address Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Content__c-ccrz__CC Content Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Coupon__c-ccrz__CC Coupon Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_FeaturedProductI18N__c-ccrz__CC FeaturedProductI18N Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_FeaturedProduct__c-ccrz__CC Featured Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Foo__c-ccrz__CC Foo Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_HtmlCache__c-ccrz__CC Html Cache Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_InvoiceItem__c-ccrz__CC Invoice Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Invoice__c-ccrz__CC Invoice Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_LocaleFormatter__c-ccrz__CC Locale Formatter Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_MenuI18N__c-ccrz__CC Menu I18N Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_MenuItemI18N__c-ccrz__CC Menu Item I18N Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_MenuItem__c-ccrz__CC Menu Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Menu__c-ccrz__CC Menu Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_OrderItemGroup__c-ccrz__CC Order Item Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_OrderItemPricingTier__c-ccrz__CC Order Item Pricing Tier Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_OrderItem__c-ccrz__CC Order Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_OrderShipmentItem__c-ccrz__CC Order Shipment Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_OrderShipment__c-ccrz__CC Order Shipment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_OrderTerm__c-ccrz__CC Order Term Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Order__c-ccrz__CC Order Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PageLabel__c-ccrz__CC Page Label Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PageLabeli18n__c-ccrz__CC PageLabeli18n Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PageSection__c-ccrz__CC Page Section Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PaymentDetail__c-ccrz__CC Payment Detail Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Permissions__c-ccrz__E_Permissions Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PriceGroupAccount__c-ccrz__CC Price Group Account Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PriceGroupItem__c-ccrz__CC Price Group Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PriceGroupPricelist__c-ccrz__CC Price Group Pricelist Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PriceGroup__c-ccrz__CC Price Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PriceListItem__c-ccrz__CC Price List Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PriceList__c-ccrz__CC Price List Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PriceModifier__c-ccrz__CC Price Modifier Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PrivateCacheContent__c-ccrz__CC Private Cache Content Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PrivateCache__c-ccrz__CC Private Cache Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ProductCategory__c-ccrz__CC Product Category Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ProductGuide__c-ccrz__CC Product Guide Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ProductIndex__c-ccrz__CC Product Index Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ProductInventoryItem__c-ccrz__CC Product Inventory Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ProductItemI18N__c-ccrz__CC Product Item I18N Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ProductMedia__c-ccrz__CC Product Media Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ProductMedia__c-ccrz__CC Product Media Layout</layout>
+        <recordType>ccrz__E_ProductMedia__c.ccrz__Datasheet</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ProductMedia__c-ccrz__CC Product Media Layout</layout>
+        <recordType>ccrz__E_ProductMedia__c.ccrz__Image</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ProductSpecIndex__c-ccrz__CC Product Spec Index Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ProductSpec__c-ccrz__CC Product Spec Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ProductStorefront__c-ccrz__CC Product Storefront Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ProductTab__c-ccrz__CC Product Tab Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Product__c-ccrz__CC Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Product__c-ccrz__CC Product Layout</layout>
+        <recordType>ccrz__E_Product__c.ccrz__ProductType_Assembly</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Product__c-ccrz__CC Product Layout</layout>
+        <recordType>ccrz__E_Product__c.ccrz__ProductType_Config</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Product__c-ccrz__CC Product Layout</layout>
+        <recordType>ccrz__E_Product__c.ccrz__ProductType_Normal</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PromoI18n__c-ccrz__CC Promotion i18n Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Promo__c-ccrz__CC Promotion Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PromotionAccountGroupFilter__c-ccrz__CC Promotion Account Group Filter Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PublicCacheContent__c-ccrz__CC Public Cache Content Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_PublicCache__c-ccrz__CC Public Cache Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_RecentItem__c-ccrz__CC Recent Item Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_RelatedProductGroup__c-ccrz__CC Related Product Group Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_RelatedProduct__c-ccrz__CC Related Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_RequestForQuote__c-ccrz__CC Request For Quote Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ReviewLike__c-ccrz__Review Helpful Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Review__c-ccrz__CC Review Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_RichContentI18N__c-ccrz__CC Rich Content I18N Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_RichContent__c-ccrz__CC Rich Content Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_RulePricingModifier__c-ccrz__CC Rule Pricing Modifier Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_RuleSourceSKU__c-ccrz__CC Rule Source SKU Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_RuleSourceSpec__c-ccrz__CC Rule Source Spec Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_RuleTargetPLI__c-ccrz__CC Rule Target PLI Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_RuleTargetSKU__c-ccrz__CC Rule Target SKU Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_RuleTargetSpec__c-ccrz__CC Rule Target Spec Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Rule__c-ccrz__CC Rule Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_SellerI18N__c-ccrz__CC Seller I18N Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Seller__c-ccrz__CC Seller Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_ShippingRate__c-ccrz__CC Shipping Rate Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_SiteIndex__c-ccrz__CC Site Index Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Spec__c-ccrz__CC Spec Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_StoredPayment__c-ccrz__CC Stored Payment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_StorefrontAssociation__c-ccrz__CC StorefrontAssociation Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_StorefrontConfigSettings__c-ccrz__CC Storefront Config Setting Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_SubProdTermI18N__c-ccrz__CC SubProdTerm I18N Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_SubProdTerm__c-ccrz__CC SubProdTerm Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Subscriber_Page__c-ccrz__CC Subscriber Page Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Subscription__c-ccrz__CC Subscription Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_TaxRate__c-ccrz__CC Tax Rate Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_Term__c-ccrz__CC Term Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_TransactionPayment__c-ccrz__CC Transaction Payment Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__E_UserInventoryLocation__c-ccrz__CC User Inventory Location Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__L_Exception_Setup_Clone__c-ccrz__L_Exception Setup Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__L_Exception__c-ccrz__L_Exception Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__L_Logger_Setup_Clone__c-ccrz__L_Logger Setup Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ccrz__L_Logger__c-ccrz__L_Logger Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
@@ -19644,6 +19985,10 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>EditDeliveryInformation</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>EditEvent</name>
     </userPermissions>
     <userPermissions>
@@ -19876,6 +20221,10 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>ManagePartners</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>ManagePasswordPolicies</name>
     </userPermissions>
     <userPermissions>
@@ -19980,6 +20329,10 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>Packaging2PromoteVersion</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>PrivacyDataAccess</name>
     </userPermissions>
     <userPermissions>
@@ -20076,7 +20429,15 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>UseFulfillmentAPIs</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>UseOmnichannelInventoryAPIs</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>UseOrderManagementAPIs</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>

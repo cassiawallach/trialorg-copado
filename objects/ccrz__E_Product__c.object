@@ -1155,6 +1155,11 @@ SOFTWARE - Downloaded item that is controlled by licensing rather than physical 
                     <default>true</default>
                     <label>DefaultStore</label>
                 </value>
+                <value>
+                    <fullName>StorefrontTest1</fullName>
+                    <default>false</default>
+                    <label>StorefrontTest1</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
         <visibleLines>3</visibleLines>
@@ -1576,6 +1581,10 @@ SOFTWARE - Downloaded item that is controlled by licensing rather than physical 
                 <fullName>DefaultStore</fullName>
                 <default>true</default>
             </values>
+            <values>
+                <fullName>StorefrontTest1</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>ccrz__UnitOfMeasure__c</picklist>
@@ -1818,6 +1827,10 @@ SOFTWARE - Downloaded item that is controlled by licensing rather than physical 
                 <fullName>DefaultStore</fullName>
                 <default>true</default>
             </values>
+            <values>
+                <fullName>StorefrontTest1</fullName>
+                <default>false</default>
+            </values>
         </picklistValues>
         <picklistValues>
             <picklist>ccrz__UnitOfMeasure__c</picklist>
@@ -2059,6 +2072,10 @@ SOFTWARE - Downloaded item that is controlled by licensing rather than physical 
             <values>
                 <fullName>DefaultStore</fullName>
                 <default>true</default>
+            </values>
+            <values>
+                <fullName>StorefrontTest1</fullName>
+                <default>false</default>
             </values>
         </picklistValues>
         <picklistValues>
