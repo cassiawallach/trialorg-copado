@@ -184,15 +184,6 @@
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
-    <listViews>
-        <fullName>All_Quick_Text</fullName>
-        <columns>Name</columns>
-        <columns>Message</columns>
-        <columns>Category</columns>
-        <columns>Channel</columns>
-        <filterScope>Mine</filterScope>
-        <label>All Quick Text</label>
-    </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>Message</customTabListAdditionalFields>
         <customTabListAdditionalFields>Category</customTabListAdditionalFields>

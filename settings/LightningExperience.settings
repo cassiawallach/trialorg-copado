@@ -27,7 +27,7 @@
     <enableS1UiLoggingEnabled>true</enableS1UiLoggingEnabled>
     <enableTryLightningOptOut>false</enableTryLightningOptOut>
     <enableUseS1AlohaDesktop>false</enableUseS1AlohaDesktop>
-    <enableUsersAreLightningOnly>true</enableUsersAreLightningOnly>
+    <enableUsersAreLightningOnly>false</enableUsersAreLightningOnly>
     <isLEXExtensionComponentCustomizationOff>false</isLEXExtensionComponentCustomizationOff>
     <isLEXExtensionDarkModeOff>false</isLEXExtensionDarkModeOff>
     <isLEXExtensionLinkGrabberOff>false</isLEXExtensionLinkGrabberOff>

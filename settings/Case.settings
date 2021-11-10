@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CaseSettings xmlns="http://soap.sforce.com/2006/04/metadata">
-    <caseAutoProcUser>false</caseAutoProcUser>
+    <caseAssignNotificationTemplate>unfiled$public/SupportCaseAssignmentNotification</caseAssignNotificationTemplate>
+    <caseCreateNotificationTemplate>unfiled$public/SupportCaseCreatedPhoneInquiries</caseCreateNotificationTemplate>
     <caseFeedItemSettings>
         <characterLimit>400</characterLimit>
         <displayFormat>Default</displayFormat>
@@ -8,28 +9,17 @@
     </caseFeedItemSettings>
     <caseFeedReadUnreadLtng>false</caseFeedReadUnreadLtng>
     <caseMergeInLightning>false</caseMergeInLightning>
-    <closeCaseThroughStatusChange>true</closeCaseThroughStatusChange>
-    <defaultCaseFeedLayoutOn>false</defaultCaseFeedLayoutOn>
-    <defaultCaseOwner>trialuser.trialorg@force.com</defaultCaseOwner>
+    <closeCaseThroughStatusChange>false</closeCaseThroughStatusChange>
+    <defaultCaseFeedLayoutOn>true</defaultCaseFeedLayoutOn>
+    <defaultCaseOwner>cwallach.trialorg.dev@copado.com</defaultCaseOwner>
     <defaultCaseOwnerType>User</defaultCaseOwnerType>
+    <defaultCaseUser>cwallach.trialorg.dev@copado.com</defaultCaseUser>
     <emailToCase>
-        <enableE2CAttachmentAsFile>false</enableE2CAttachmentAsFile>
-        <enableE2CSourceTracking>true</enableE2CSourceTracking>
-        <enableEmailToCase>true</enableEmailToCase>
-        <enableHtmlEmail>true</enableHtmlEmail>
-        <enableOnDemandEmailToCase>true</enableOnDemandEmailToCase>
-        <enableThreadIDInBody>true</enableThreadIDInBody>
-        <enableThreadIDInSubject>true</enableThreadIDInSubject>
-        <notifyOwnerOnNewCaseEmail>true</notifyOwnerOnNewCaseEmail>
-        <overEmailLimitAction>Bounce</overEmailLimitAction>
-        <preQuoteSignature>false</preQuoteSignature>
-        <unauthorizedSenderAction>Discard</unauthorizedSenderAction>
+        <enableEmailToCase>false</enableEmailToCase>
     </emailToCase>
     <enableCaseFeed>true</enableCaseFeed>
     <enableCollapseEmailThread>true</enableCollapseEmailThread>
-    <enableDraftEmails>true</enableDraftEmails>
     <enableEarlyEscalationRuleTriggers>false</enableEarlyEscalationRuleTriggers>
-    <enableEmailActionDefaultsHandler>false</enableEmailActionDefaultsHandler>
     <enableEscalateQfiToCaseInternal>false</enableEscalateQfiToCaseInternal>
     <enableMultiLangSolnSrchCSS>false</enableMultiLangSolnSrchCSS>
     <enableMultiLangSolnSrchPKB>false</enableMultiLangSolnSrchPKB>
@@ -37,9 +27,6 @@
     <enableSolutionCategory>false</enableSolutionCategory>
     <enableSolutionInlineCategory>true</enableSolutionInlineCategory>
     <enableSolutionShortSummary>true</enableSolutionShortSummary>
-    <enableSuggestedArticlesApplication>false</enableSuggestedArticlesApplication>
-    <enableSuggestedArticlesCustomerPortal>false</enableSuggestedArticlesCustomerPortal>
-    <enableSuggestedArticlesPartnerPortal>false</enableSuggestedArticlesPartnerPortal>
     <enableSuggestedSolutions>true</enableSuggestedSolutions>
     <escalateCaseBefore>false</escalateCaseBefore>
     <notifyContactOnCaseComment>false</notifyContactOnCaseComment>
@@ -47,12 +34,12 @@
     <notifyOwnerOnCaseComment>false</notifyOwnerOnCaseComment>
     <notifyOwnerOnCaseOwnerChange>false</notifyOwnerOnCaseOwnerChange>
     <showEmailAttachmentsInCaseAttachmentsRL>true</showEmailAttachmentsInCaseAttachmentsRL>
-    <showFewerCloseActions>false</showFewerCloseActions>
-    <systemUserEmail>noreply@00d5f000003y0ireaa</systemUserEmail>
     <useSystemEmailAddress>true</useSystemEmailAddress>
-    <useSystemUserAsDefaultCaseUser>true</useSystemUserAsDefaultCaseUser>
+    <useSystemUserAsDefaultCaseUser>false</useSystemUserAsDefaultCaseUser>
     <visibleInCssCheckbox>false</visibleInCssCheckbox>
     <webToCase>
-        <enableWebToCase>false</enableWebToCase>
+        <caseOrigin>Web</caseOrigin>
+        <defaultResponseTemplate>unfiled$public/SupportCaseCreatedWebInquiries</defaultResponseTemplate>
+        <enableWebToCase>true</enableWebToCase>
     </webToCase>
 </CaseSettings>

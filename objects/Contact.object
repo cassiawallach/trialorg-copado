@@ -323,7 +323,6 @@
         <type>Default</type>
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
     <externalSharingModel>ControlledByParent</externalSharingModel>
@@ -342,6 +341,10 @@
     </fields>
     <fields>
         <fullName>Birthdate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+    </fields>
+    <fields>
+        <fullName>CleanStatus</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
@@ -386,6 +389,16 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Languages__c</fullName>
+        <externalId>false</externalId>
+        <label>Languages</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>LastCURequestDate</fullName>
     </fields>
     <fields>
@@ -395,6 +408,34 @@
         <fullName>LeadSource</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Level__c</fullName>
+        <externalId>false</externalId>
+        <label>Level</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Secondary</fullName>
+                    <default>false</default>
+                    <label>Secondary</label>
+                </value>
+                <value>
+                    <fullName>Tertiary</fullName>
+                    <default>false</default>
+                    <label>Tertiary</label>
+                </value>
+                <value>
+                    <fullName>Primary</fullName>
+                    <default>false</default>
+                    <label>Primary</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>MailingAddress</fullName>
@@ -434,17 +475,106 @@
         <fullName>Title</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
+    <fields>
+        <fullName>ccrz__CompanyName__c</fullName>
+        <defaultValue>$User.CompanyName</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>CompanyName</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ccrz__CompanyType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>CompanyType</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Type1</fullName>
+                    <default>false</default>
+                    <label>Type1</label>
+                </value>
+                <value>
+                    <fullName>Type2</fullName>
+                    <default>false</default>
+                    <label>Type2</label>
+                </value>
+                <value>
+                    <fullName>Type3</fullName>
+                    <default>false</default>
+                    <label>Type3</label>
+                </value>
+                <value>
+                    <fullName>Type4</fullName>
+                    <default>false</default>
+                    <label>Type4</label>
+                </value>
+                <value>
+                    <fullName>Type5</fullName>
+                    <default>false</default>
+                    <label>Type5</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ccrz__DataId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>B2B Commerce internal use only except when used with ccApiTestData.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>B2B Commerce internal use only except when used with ccApiTestData.</inlineHelpText>
+        <label>DataId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ccrz__IsPortalUser__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Is Contact a Portal User</description>
+        <externalId>false</externalId>
+        <inlineHelpText>True if contact is a portal user, False otherwise</inlineHelpText>
+        <label>Portal User</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ccrz__SelfRegistered__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Boolean determining if the user is a portal user self registered through the site.</description>
+        <externalId>false</externalId>
+        <label>Self Registered</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
     <listViews>
         <fullName>AllContacts</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>CONTACT.TITLE</columns>
-        <columns>CONTACT.PHONE1</columns>
-        <columns>CONTACT.EMAIL</columns>
-        <columns>CORE.USERS.FIRST_NAME</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
         <filterScope>Everything</filterScope>
         <label>All Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>BirthdaysThisMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.BIRTHDATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Birthdays This Month</label>
     </listViews>
     <listViews>
         <fullName>BulkMessageContacts</fullName>
@@ -457,91 +587,69 @@
     </listViews>
     <listViews>
         <fullName>MyContacts</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>CONTACT.TITLE</columns>
-        <columns>CONTACT.PHONE1</columns>
-        <columns>CONTACT.EMAIL</columns>
-        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Mine</filterScope>
         <label>My Contacts</label>
     </listViews>
-    <recordTypes>
-        <fullName>Agent</fullName>
-        <active>true</active>
-        <label>Agent</label>
-    </recordTypes>
-    <recordTypes>
-        <fullName>Contractor</fullName>
-        <active>true</active>
-        <label>Contractor</label>
-    </recordTypes>
-    <recordTypes>
-        <fullName>Lender</fullName>
-        <active>true</active>
-        <label>Lender</label>
-    </recordTypes>
-    <recordTypes>
-        <fullName>Tenant</fullName>
-        <active>true</active>
-        <label>Tenant</label>
-    </recordTypes>
+    <listViews>
+        <fullName>NewLastWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>LAST_WEEK</value>
+        </filters>
+        <label>New Last Week</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CONTACT.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
         <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
         <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTACT.PHONE1</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <webLinks>
-        <fullName>GoogleMaps</fullName>
+        <fullName>ccrz__CSR_Flow</fullName>
         <availability>online</availability>
-        <displayType>link</displayType>
-        <encodingKey>UTF-8</encodingKey>
+        <displayType>button</displayType>
         <hasMenubar>false</hasMenubar>
         <hasScrollbars>true</hasScrollbars>
         <hasToolbar>false</hasToolbar>
         <height>600</height>
         <isResizable>true</isResizable>
-        <linkType>url</linkType>
-        <masterLabel>Google Maps</masterLabel>
+        <linkType>page</linkType>
+        <masterLabel>CSR Flow</masterLabel>
         <openType>newWindow</openType>
+        <page>ccrz__cc_admin_CSRFlow</page>
         <position>none</position>
         <protected>false</protected>
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
-        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Contact_MailingStreet}+{!Contact_MailingCity}+{!Contact_MailingState}&amp;om=1</url>
-    </webLinks>
-    <webLinks>
-        <fullName>GoogleSearch</fullName>
-        <availability>online</availability>
-        <displayType>link</displayType>
-        <encodingKey>UTF-8</encodingKey>
-        <hasMenubar>false</hasMenubar>
-        <hasScrollbars>true</hasScrollbars>
-        <hasToolbar>false</hasToolbar>
-        <height>600</height>
-        <isResizable>true</isResizable>
-        <linkType>url</linkType>
-        <masterLabel>Google Search</masterLabel>
-        <openType>newWindow</openType>
-        <position>none</position>
-        <protected>false</protected>
-        <showsLocation>false</showsLocation>
-        <showsStatus>false</showsStatus>
-        <url>http://www.google.com/search?q={!Contact_FirstName} {!Contact_LastName}</url>
     </webLinks>
 </CustomObject>
