@@ -1,0 +1,59 @@
+<messaging:emailTemplate subject="{!$Label.ccrz__b2b_order_confirm_email_subject}" recipientType="Contact" relatedToType="ccrz__E_Order__c">
+<messaging:plainTextEmailBody >
+Congratulations!
+This is the plain text version<br />
+include component here
+</messaging:plainTextEmailBody>
+<messaging:htmlEmailBody >
+<html>
+<style type="text/css">
+body {
+    background-color:#2F2F2F;
+}
+
+
+table {
+    background-color: #FFFFFF;
+    border: 2px solid;
+    border-radius: 10px;
+    webkit-border-radius: 10px;
+    moz-border-radius: 10px;
+}
+        
+h {
+    color: #0d6bab;
+    font-family: ProximaNovaBold, Arial, Helvetica, sans-serif;
+}
+          
+h2 {
+    color: #0d6bab;
+    font-family: ProximaNovaBold, Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    color: #0d6bab;
+    width:450px;
+    word-wrap: break-word;
+    font-family: ProximaNovaBold, Arial, Helvetica, sans-serif;
+}
+
+.emailFooter-Div{
+    color: #0d6bab;
+    font-family: ProximaNovaBold, Arial, Helvetica, sans-serif;
+}
+
+.spacerTD {
+	width:60%;
+}
+</style>
+
+<head>
+</head>
+<body>
+
+<c:cc_OrderSummaryAsync pOrderID="{!relatedTo.ID}"/>
+
+</body>
+</html>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

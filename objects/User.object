@@ -287,6 +287,191 @@
         <type>Hierarchy</type>
     </fields>
     <fields>
+        <fullName>ccrz__CC_CurrencyCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Customized Currency field for Orgs which don&apos;t have  Multi-currency feautre.</description>
+        <externalId>false</externalId>
+        <label>Currency</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ccrz__CompanyType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>CompanyType</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ISP</fullName>
+                    <default>false</default>
+                    <label>ISP</label>
+                </value>
+                <value>
+                    <fullName>Security</fullName>
+                    <default>false</default>
+                    <label>Security</label>
+                </value>
+                <value>
+                    <fullName>Data Management</fullName>
+                    <default>false</default>
+                    <label>Data Management</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ccrz__ContactTypeRole__c</fullName>
+        <deprecated>false</deprecated>
+        <description>CloudCraze contact type role</description>
+        <externalId>false</externalId>
+        <label>Contact Type Role</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Researcher/Post Doc</fullName>
+                    <default>true</default>
+                    <label>Researcher/Post Doc</label>
+                </value>
+                <value>
+                    <fullName>Purchasing Agent</fullName>
+                    <default>false</default>
+                    <label>Purchasing Agent</label>
+                </value>
+                <value>
+                    <fullName>Student</fullName>
+                    <default>false</default>
+                    <label>Student</label>
+                </value>
+                <value>
+                    <fullName>Lab Manager</fullName>
+                    <default>false</default>
+                    <label>Lab Manager</label>
+                </value>
+                <value>
+                    <fullName>Department Chair</fullName>
+                    <default>false</default>
+                    <label>Department Chair</label>
+                </value>
+                <value>
+                    <fullName>Principal Investigator</fullName>
+                    <default>false</default>
+                    <label>Principal Investigator</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ccrz__DataId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>B2B Commerce internal use only except when used with ccApiTestData.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>B2B Commerce internal use only except when used with ccApiTestData.</inlineHelpText>
+        <label>DataId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ccrz__Tax_Exempt__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Determines whether the current user gets qualified for the tax-exempt</description>
+        <externalId>false</externalId>
+        <label>Tax Exempt</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ccrz__User_Industry__c</fullName>
+        <deprecated>false</deprecated>
+        <description>CloudCraze user industry</description>
+        <externalId>false</externalId>
+        <label>User Industry</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Academic research</fullName>
+                    <default>true</default>
+                    <label>Academic research</label>
+                </value>
+                <value>
+                    <fullName>commercial</fullName>
+                    <default>false</default>
+                    <label>commercial</label>
+                </value>
+                <value>
+                    <fullName>government</fullName>
+                    <default>false</default>
+                    <label>government</label>
+                </value>
+                <value>
+                    <fullName>OEM-Reseller</fullName>
+                    <default>false</default>
+                    <label>OEM-Reseller</label>
+                </value>
+                <value>
+                    <fullName>other</fullName>
+                    <default>false</default>
+                    <label>other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ccrz__User_Salutation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>CloudCraze user salutation</description>
+        <externalId>false</externalId>
+        <label>User Salutation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Mr</fullName>
+                    <default>true</default>
+                    <label>Mr</label>
+                </value>
+                <value>
+                    <fullName>Mrs</fullName>
+                    <default>false</default>
+                    <label>Mrs</label>
+                </value>
+                <value>
+                    <fullName>Ms</fullName>
+                    <default>false</default>
+                    <label>Ms</label>
+                </value>
+                <value>
+                    <fullName>Dr</fullName>
+                    <default>false</default>
+                    <label>Dr</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
         <fullName>copado__API_URL__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
