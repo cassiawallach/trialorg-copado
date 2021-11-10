@@ -196,145 +196,201 @@
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
-    <compactLayoutAssignment>User_Layout</compactLayoutAssignment>
-    <compactLayouts>
-        <fullName>User_Layout</fullName>
-        <fields>Name</fields>
-        <fields>Title</fields>
-        <label>User Layout</label>
-    </compactLayouts>
-    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>true</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
-    <fieldSets>
-        <fullName>copado__License_Manager</fullName>
-        <availableFields>
-            <field>City</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>CommunityNickname</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>CompanyName</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>Country</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>Department</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>Division</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>ProfileId</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>State</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>Title</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>UserRoleId</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>UserType</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>Username</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <description>License Manager page</description>
-        <displayedFields>
-            <field>Name</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <displayedFields>
-            <field>IsActive</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </displayedFields>
-        <label>Copado License Manager</label>
-    </fieldSets>
     <fields>
         <fullName>ManagerId</fullName>
         <trackFeedHistory>true</trackFeedHistory>
         <type>Hierarchy</type>
     </fields>
     <fields>
-        <fullName>copado__API_URL__c</fullName>
+        <fullName>ccrz__CC_CurrencyCode__c</fullName>
         <deprecated>false</deprecated>
+        <description>Customized Currency field for Orgs which don&apos;t have  Multi-currency feautre.</description>
         <externalId>false</externalId>
-        <formula>$Api.Partner_Server_URL_290</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>API_URL</label>
+        <label>Currency</label>
+        <length>30</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>copado__Hide_Copado_feedback__c</fullName>
+        <fullName>ccrz__CompanyType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>CompanyType</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ISP</fullName>
+                    <default>false</default>
+                    <label>ISP</label>
+                </value>
+                <value>
+                    <fullName>Security</fullName>
+                    <default>false</default>
+                    <label>Security</label>
+                </value>
+                <value>
+                    <fullName>Data Management</fullName>
+                    <default>false</default>
+                    <label>Data Management</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ccrz__ContactTypeRole__c</fullName>
+        <deprecated>false</deprecated>
+        <description>CloudCraze contact type role</description>
+        <externalId>false</externalId>
+        <label>Contact Type Role</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Researcher/Post Doc</fullName>
+                    <default>true</default>
+                    <label>Researcher/Post Doc</label>
+                </value>
+                <value>
+                    <fullName>Purchasing Agent</fullName>
+                    <default>false</default>
+                    <label>Purchasing Agent</label>
+                </value>
+                <value>
+                    <fullName>Student</fullName>
+                    <default>false</default>
+                    <label>Student</label>
+                </value>
+                <value>
+                    <fullName>Lab Manager</fullName>
+                    <default>false</default>
+                    <label>Lab Manager</label>
+                </value>
+                <value>
+                    <fullName>Department Chair</fullName>
+                    <default>false</default>
+                    <label>Department Chair</label>
+                </value>
+                <value>
+                    <fullName>Principal Investigator</fullName>
+                    <default>false</default>
+                    <label>Principal Investigator</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ccrz__DataId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <description>B2B Commerce internal use only except when used with ccApiTestData.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>B2B Commerce internal use only except when used with ccApiTestData.</inlineHelpText>
+        <label>DataId</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>ccrz__Tax_Exempt__c</fullName>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
+        <description>Determines whether the current user gets qualified for the tax-exempt</description>
         <externalId>false</externalId>
-        <inlineHelpText>The visibility of the message asking users to rate &amp; feedback Copado on the AppExchange is controlled here.</inlineHelpText>
-        <label>Hide Copado feedback</label>
+        <label>Tax Exempt</label>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>copado__Show_Copado_Tips__c</fullName>
-        <defaultValue>true</defaultValue>
+        <fullName>ccrz__User_Industry__c</fullName>
         <deprecated>false</deprecated>
+        <description>CloudCraze user industry</description>
         <externalId>false</externalId>
-        <label>Show Copado Tips</label>
+        <label>User Industry</label>
+        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <type>Checkbox</type>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Academic research</fullName>
+                    <default>true</default>
+                    <label>Academic research</label>
+                </value>
+                <value>
+                    <fullName>commercial</fullName>
+                    <default>false</default>
+                    <label>commercial</label>
+                </value>
+                <value>
+                    <fullName>government</fullName>
+                    <default>false</default>
+                    <label>government</label>
+                </value>
+                <value>
+                    <fullName>OEM-Reseller</fullName>
+                    <default>false</default>
+                    <label>OEM-Reseller</label>
+                </value>
+                <value>
+                    <fullName>other</fullName>
+                    <default>false</default>
+                    <label>other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
-        <fullName>copado__Work_Manager_Panels__c</fullName>
+        <fullName>ccrz__User_Salutation__c</fullName>
         <deprecated>false</deprecated>
-        <description>JSON containing current user panels on the Backlog</description>
+        <description>CloudCraze user salutation</description>
         <externalId>false</externalId>
-        <label>Work Manager Panels</label>
-        <length>131072</length>
+        <label>User Salutation</label>
+        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <type>LongTextArea</type>
-        <visibleLines>2</visibleLines>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Mr</fullName>
+                    <default>true</default>
+                    <label>Mr</label>
+                </value>
+                <value>
+                    <fullName>Mrs</fullName>
+                    <default>false</default>
+                    <label>Mrs</label>
+                </value>
+                <value>
+                    <fullName>Ms</fullName>
+                    <default>false</default>
+                    <label>Ms</label>
+                </value>
+                <value>
+                    <fullName>Dr</fullName>
+                    <default>false</default>
+                    <label>Dr</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <listViews>
         <fullName>ActiveUsers</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>CORE.USERS.USERNAME</columns>
-        <columns>CORE.USERS.LAST_LOGIN</columns>
-        <columns>CORE.USER_ROLE.NAME</columns>
-        <columns>CORE.PROFILE.NAME</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CORE.USERS.ACTIVE</field>
@@ -345,12 +401,6 @@
     </listViews>
     <listViews>
         <fullName>AdminUsers</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>CORE.USERS.USERNAME</columns>
-        <columns>CORE.USERS.LAST_LOGIN</columns>
-        <columns>CORE.USER_ROLE.NAME</columns>
-        <columns>CORE.USERS.ACTIVE</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>CORE.PROFILE.NAME</field>
@@ -361,13 +411,6 @@
     </listViews>
     <listViews>
         <fullName>AllUsers</fullName>
-        <columns>FULL_NAME</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>CORE.USERS.USERNAME</columns>
-        <columns>CORE.USERS.LAST_LOGIN</columns>
-        <columns>CORE.USER_ROLE.NAME</columns>
-        <columns>CORE.USERS.ACTIVE</columns>
-        <columns>CORE.PROFILE.NAME</columns>
         <filterScope>Everything</filterScope>
         <label>All Users</label>
     </listViews>

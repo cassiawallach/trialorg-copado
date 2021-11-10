@@ -6,6 +6,5 @@
     <label>LightningInstrumentation</label>
     <navType>Standard</navType>
     <tabs>standard-LightningInstrumentation</tabs>
-    <tabs>MobileLanding</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

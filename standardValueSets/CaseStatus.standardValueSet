@@ -8,16 +8,10 @@
         <closed>false</closed>
     </standardValue>
     <standardValue>
-        <fullName>On Hold</fullName>
+        <fullName>Working</fullName>
         <default>false</default>
-        <label>On Hold</label>
+        <label>Working</label>
         <closed>false</closed>
-    </standardValue>
-    <standardValue>
-        <fullName>Closed</fullName>
-        <default>false</default>
-        <label>Closed</label>
-        <closed>true</closed>
     </standardValue>
     <standardValue>
         <fullName>Escalated</fullName>
@@ -26,9 +20,9 @@
         <closed>false</closed>
     </standardValue>
     <standardValue>
-        <fullName>Critical</fullName>
+        <fullName>Closed</fullName>
         <default>false</default>
-        <label>Critical</label>
-        <closed>false</closed>
+        <label>Closed</label>
+        <closed>true</closed>
     </standardValue>
 </StandardValueSet>

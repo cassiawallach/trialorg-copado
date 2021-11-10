@@ -1,0 +1,45 @@
+<apex:page standardController="Contact" extensions="ccrz.cc_ctrl_CSRFlow,ccrz.cc_ctrl_I18NExtension" language="{!userLanguageCode}" sidebar="false" showHeader="false">
+<script>
+var ccrzCSRJumpTo = function(ctId) {
+	var selStorId  = '{!$Component.storeForm.selPageBlock.selPageSection.selPageSectionItem.storeSelect}';
+	var store = document.getElementById(selStorId).value;
+	document.getElementById("storeNavigateBtn").disabled = true;
+
+	Visualforce.remoting.Manager.invokeAction(
+		'{!$RemoteAction.cc_ctrl_CSRFlow.resolveForwardUrl}',
+		store,
+		ctId,
+		function(result, event) {
+			document.getElementById("storeNavigateBtn").disabled = false;
+			if(result && result.success) {
+				var adjTargURL = result.data;
+				if (window!=window.top) {
+					window.open(adjTargURL,'_blank');
+				}else{
+					window.location = adjTargURL;
+				}
+			}
+		},
+		{escape: false}
+	);
+};
+</script>
+<apex:form id="storeForm">
+	<apex:pageMessages />
+	<apex:pageBlock title="{!$Label.ccrz__b2badmin_csr_order_on_behalf_header}" rendered="{!IF(IsActiveUser,true,false)}" id="selPageBlock">
+		<apex:pageBlockSection title="{!$Label.ccrz__b2badmin_csr_storefront_info}" columns="1" id="selPageSection">
+			<apex:pageBlockSectionItem id="selPageSectionItem">
+				<apex:outputLabel for="storeSelect" value="{!$Label.ccrz__b2badmin_csr_select_storefront}" />
+				<apex:selectList id="storeSelect" value="{!currentStorefront}" size="1">
+					<apex:selectOptions value="{!storefrontOptionList}" />
+				</apex:selectList>
+			</apex:pageBlockSectionItem>
+			<input type="Button" id="storeNavigateBtn" value="{!$Label.b2badmin_continue}" onclick="ccrzCSRJumpTo('{!contactId}');"/>
+		</apex:pageBlockSection>
+	</apex:pageBlock>
+	<apex:pageBlock title="{!$Label.ccrz__b2badmin_csr_order_on_behalf_header}" rendered="{!IF(IsActiveUser, false, true)}">
+		<apex:outputField value="{!Contact.Name}" />&nbsp;{!$Label.b2badmin_csr_invalid_contact}
+	</apex:pageBlock>
+</apex:form>
+
+</apex:page>
