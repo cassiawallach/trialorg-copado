@@ -145,7 +145,7 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
@@ -153,6 +153,20 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AE_User__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>AE User</label>
+        <referenceTo>AE_SE_Mappings__c</referenceTo>
+        <relationshipLabel>SE Mappings</relationshipLabel>
+        <relationshipName>Mapping1</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
     <fields>
         <fullName>Account_Executive__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -170,9 +184,24 @@
         <defaultValue>true</defaultValue>
         <externalId>false</externalId>
         <label>Primary</label>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SE_User__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>SE User</label>
+        <referenceTo>AE_SE_Mappings__c</referenceTo>
+        <relationshipLabel>AE Mappings</relationshipLabel>
+        <relationshipName>Mapping</relationshipName>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Sales_Engineer__c</fullName>
@@ -191,6 +220,7 @@
         <externalId>false</externalId>
         <label>Status</label>
         <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -221,6 +251,7 @@
         <externalId>false</externalId>
         <label>Vertical</label>
         <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -275,6 +306,7 @@
     <nameField>
         <displayFormat>M-{0000}</displayFormat>
         <label>Mapping Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
