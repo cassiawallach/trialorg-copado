@@ -265,7 +265,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Stages</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
