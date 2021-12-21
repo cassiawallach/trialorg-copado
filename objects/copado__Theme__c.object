@@ -220,7 +220,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Themes</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

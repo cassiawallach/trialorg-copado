@@ -328,7 +328,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Process Blocks</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
