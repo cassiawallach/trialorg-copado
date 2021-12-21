@@ -356,7 +356,7 @@ IF(NOT(ISBLANK( copado__JobExecution__r.copado__Promotion__c )), copado__JobExec
         <type>Text</type>
     </nameField>
     <pluralLabel>Job Steps</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>copado__Template_OR_Execution_Is_Required</fullName>
