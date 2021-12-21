@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
-        <plural>false</plural>
-        <value>Property</value>
-    </caseValues>
-    <caseValues>
         <plural>true</plural>
         <value>Properties</value>
     </caseValues>
+    <caseValues>
+        <plural>false</plural>
+        <value>Property</value>
+    </caseValues>
+    <fields>
+        <label></label>
+        <name>Quip_URL__c</name>
+    </fields>
+    <fields>
+        <label></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Maintenance</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Listing</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Submitted</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rented</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Under Contract</masterLabel>
+            <translation></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vacant</masterLabel>
+            <translation></translation>
+        </picklistValues>
+    </fields>
     <fields>
         <caseValues>
             <plural>false</plural>
@@ -45,63 +77,38 @@
         <startsWith>Consonant</startsWith>
     </fields>
     <fields>
-        <label><!-- Quip_URL --></label>
-        <name>Quip_URL__c</name>
-    </fields>
-    <fields>
-        <label><!-- Property Status --></label>
-        <name>Status__c</name>
-        <picklistValues>
-            <masterLabel>Maintenance</masterLabel>
-            <translation><!-- Maintenance --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>New Listing</masterLabel>
-            <translation><!-- New Listing --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Offer Submitted</masterLabel>
-            <translation><!-- Offer Submitted --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Rented</masterLabel>
-            <translation><!-- Rented --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Under Contract</masterLabel>
-            <translation><!-- Under Contract --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Vacant</masterLabel>
-            <translation><!-- Vacant --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <label><!-- Currency Test --></label>
+        <label></label>
         <name>rh2__testCurrency__c</name>
     </fields>
     <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
         <layout>Property Layout</layout>
         <sections>
-            <label><!-- Address --></label>
+            <label></label>
             <section>Address</section>
         </sections>
     </layouts>
     <quickActions>
-        <label><!-- Child Account --></label>
+        <label></label>
         <name>Child_Account</name>
     </quickActions>
     <startsWith>Consonant</startsWith>
     <webLinks>
-        <label><!-- GoogleMaps --></label>
+        <label></label>
         <name>GoogleMaps</name>
     </webLinks>
     <webLinks>
-        <label><!-- GoogleNews --></label>
+        <label></label>
         <name>GoogleNews</name>
     </webLinks>
     <webLinks>
-        <label><!-- GoogleSearch --></label>
+        <label></label>
         <name>GoogleSearch</name>
     </webLinks>
 </CustomObjectTranslation>

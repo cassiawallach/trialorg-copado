@@ -632,8 +632,8 @@
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Bundled_UserStories</pluralLabel>
-    <searchLayouts/>
+    <pluralLabel>Bundled User Stories</pluralLabel>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
