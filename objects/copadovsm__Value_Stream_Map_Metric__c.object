@@ -221,7 +221,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Value Stream Map Metrics</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
