@@ -234,7 +234,7 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Value Stream Map Configurations</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
