@@ -141,7 +141,7 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>copado__PackageCompactLayout</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
     <enableActivities>true</enableActivities>
@@ -1200,7 +1200,7 @@ The org credential where the unmanaged package is created from.</inlineHelpText>
             </values>
         </picklistValues>
     </recordTypes>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>copado__ArtifactNameCannotChange</fullName>

@@ -251,7 +251,7 @@ Make it checked for the fields which do not exist on external system.</inlineHel
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Field Mappings</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
