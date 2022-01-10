@@ -121,6 +121,7 @@
                     <value>3</value>
                 </componentInstanceProperties>
                 <componentName>force:highlightsPanel</componentName>
+                <identifier>force_highlightsPanel</identifier>
             </componentInstance>
         </itemInstances>
         <name>header</name>
@@ -130,16 +131,19 @@
         <itemInstances>
             <fieldInstance>
                 <fieldItem>Record.Name</fieldItem>
+                <identifier>RecordNameField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldItem>Record.copadovsm__Last_Execution_Datetime__c</fieldItem>
+                <identifier>RecordLast_Execution_Datetime__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldItem>Record.copadovsm__Recalculation_Status__c</fieldItem>
+                <identifier>RecordRecalculation_Status__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-16853e68-0ef2-4b61-9c83-7f9fe5266d56</name>
@@ -149,11 +153,13 @@
         <itemInstances>
             <fieldInstance>
                 <fieldItem>Record.OwnerId</fieldItem>
+                <identifier>RecordOwnerIdField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldItem>Record.copadovsm__Description__c</fieldItem>
+                <identifier>RecordDescription__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-cf14ae64-49b3-4ebe-a5c8-0e35d4518924</name>
@@ -167,6 +173,7 @@
                     <value>Facet-16853e68-0ef2-4b61-9c83-7f9fe5266d56</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -176,6 +183,7 @@
                     <value>Facet-cf14ae64-49b3-4ebe-a5c8-0e35d4518924</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column2</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-97176653-8fc1-4852-a7dc-d6a0a1758d43</name>
@@ -185,21 +193,25 @@
         <itemInstances>
             <fieldInstance>
                 <fieldItem>Record.copadovsm__Object__c</fieldItem>
+                <identifier>RecordObject__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldItem>Record.copadovsm__Record_Types__c</fieldItem>
+                <identifier>RecordRecord_Types__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldItem>Record.copadovsm__Activation_Datetime__c</fieldItem>
+                <identifier>RecordActivation_Datetime__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldItem>Record.CreatedById</fieldItem>
+                <identifier>RecordCreatedByIdField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-2cc0c0db-c4f4-40bd-8b87-5131466ebf73</name>
@@ -209,21 +221,25 @@
         <itemInstances>
             <fieldInstance>
                 <fieldItem>Record.copadovsm__Primary_Field__c</fieldItem>
+                <identifier>RecordPrimary_Field__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldItem>Record.copadovsm__Operator_Field__c</fieldItem>
+                <identifier>RecordOperator_Field__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldItem>Record.copadovsm__Active__c</fieldItem>
+                <identifier>RecordActive__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldItem>Record.LastModifiedById</fieldItem>
+                <identifier>RecordLastModifiedByIdField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-605257d9-8a26-40a9-b74a-9d0b4a2477ed</name>
@@ -237,6 +253,7 @@
                     <value>Facet-2cc0c0db-c4f4-40bd-8b87-5131466ebf73</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column3</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -246,6 +263,7 @@
                     <value>Facet-605257d9-8a26-40a9-b74a-9d0b4a2477ed</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column4</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-63765823-74a9-4d6e-a5c7-ed6ccce2dcdb</name>
@@ -263,6 +281,7 @@
                     <value>Information</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -276,6 +295,7 @@
                     <value>Setup</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection2</identifier>
             </componentInstance>
         </itemInstances>
         <name>detailTabContent</name>
@@ -285,6 +305,7 @@
         <itemInstances>
             <componentInstance>
                 <componentName>copadovsm:valueStreamMap</componentName>
+                <identifier>valueStreamMap</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-e3873b4f-c469-4d64-8c94-d4e23ab7e7cc</name>
@@ -298,6 +319,7 @@
                     <value>true</value>
                 </componentInstanceProperties>
                 <componentName>copadovsm:vsmRecordEdit</componentName>
+                <identifier>vsmRecordEdit</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-voxihc7yc9c</name>
@@ -307,6 +329,7 @@
         <itemInstances>
             <componentInstance>
                 <componentName>copadovsm:valueStreamMapConfig</componentName>
+                <identifier>valueStreamMapConfig</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-6806c363-c2d0-44f8-acbe-7790732848ed</name>
@@ -316,6 +339,7 @@
         <itemInstances>
             <componentInstance>
                 <componentName>forceChatter:recordFeedContainer</componentName>
+                <identifier>forceChatter_recordFeedContainer</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-b3c989b2-9697-4fba-9385-4123bf505577</name>
@@ -337,6 +361,7 @@
                     <value>Standard.Tab.detail</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
+                <identifier>detailTab</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -354,6 +379,7 @@
                     <value>Value Stream Map</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
+                <identifier>customTab</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -367,6 +393,7 @@
                     <value>Stages</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
+                <identifier>customTab2</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -380,6 +407,7 @@
                     <value>Mapping</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
+                <identifier>customTab3</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -393,6 +421,7 @@
                     <value>Standard.Tab.collaborate</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
+                <identifier>collaborateTab</identifier>
             </componentInstance>
         </itemInstances>
         <name>maintabs</name>
@@ -406,6 +435,7 @@
                     <value>maintabs</value>
                 </componentInstanceProperties>
                 <componentName>flexipage:tabset</componentName>
+                <identifier>flexipage_tabset</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>
@@ -418,6 +448,7 @@
         <itemInstances>
             <componentInstance>
                 <componentName>copadovsm:vsmRecalculatingView</componentName>
+                <identifier>vsmRecalculatingView</identifier>
                 <visibilityRule>
                     <criteria>
                         <leftValue>{!Record.copadovsm__Recalculation_Status__c}</leftValue>

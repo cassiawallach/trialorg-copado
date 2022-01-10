@@ -225,7 +225,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>User Story Commits</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
