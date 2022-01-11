@@ -128,20 +128,33 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>AE_SE_Mappings_Record_Page</content>
         <formFactor>Large</formFactor>
-        <type>Default</type>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>AE_SE_Mappings_Record_Page</content>
         <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>true</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>AE_SE_Mappings_Highlights_Panel</fullName>
+        <fields>Name</fields>
+        <fields>User__c</fields>
+        <fields>RecordTypeId</fields>
+        <label>AE/SE Mappings Highlights Panel</label>
+    </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
@@ -149,169 +162,71 @@
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>AE_User__c</fullName>
-        <deleteConstraint>Restrict</deleteConstraint>
-        <externalId>false</externalId>
-        <label>AE User</label>
-        <referenceTo>AE_SE_Mappings__c</referenceTo>
-        <relationshipLabel>SE Mappings</relationshipLabel>
-        <relationshipName>Mapping1</relationshipName>
-        <required>true</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Account_Executive__c</fullName>
+        <fullName>Backup_SE__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
-        <label>Account Executive</label>
-        <referenceTo>User</referenceTo>
-        <relationshipName>Mappings</relationshipName>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Primary__c</fullName>
-        <defaultValue>true</defaultValue>
-        <externalId>false</externalId>
-        <label>Primary</label>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>SE_User__c</fullName>
-        <deleteConstraint>Restrict</deleteConstraint>
-        <externalId>false</externalId>
-        <label>SE User</label>
+        <label>Backup SE</label>
         <referenceTo>AE_SE_Mappings__c</referenceTo>
-        <relationshipLabel>AE Mappings</relationshipLabel>
-        <relationshipName>Mapping</relationshipName>
-        <required>true</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Sales_Engineer__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>Sales Engineer</label>
-        <referenceTo>User</referenceTo>
-        <relationshipName>Mappings1</relationshipName>
+        <relationshipLabel>Backup Mappings</relationshipLabel>
+        <relationshipName>Backup_Mappings</relationshipName>
         <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Status__c</fullName>
-        <externalId>false</externalId>
-        <label>Status</label>
-        <required>true</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>New</fullName>
-                    <default>false</default>
-                    <label>New</label>
-                </value>
-                <value>
-                    <fullName>Active</fullName>
-                    <default>false</default>
-                    <label>Active</label>
-                </value>
-                <value>
-                    <fullName>Inactive</fullName>
-                    <default>false</default>
-                    <label>Inactive</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Vertical__c</fullName>
-        <externalId>false</externalId>
-        <label>Vertical</label>
-        <required>true</required>
-        <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Copado Robotic Testing</fullName>
-                    <default>false</default>
-                    <label>Copado Robotic Testing</label>
-                </value>
-                <value>
-                    <fullName>Non-AOV</fullName>
-                    <default>false</default>
-                    <label>Non-AOV</label>
-                </value>
-                <value>
-                    <fullName>High Tech</fullName>
-                    <default>false</default>
-                    <label>High Tech</label>
-                </value>
-                <value>
-                    <fullName>CORE</fullName>
-                    <default>false</default>
-                    <label>CORE</label>
-                </value>
-                <value>
-                    <fullName>Retail</fullName>
-                    <default>false</default>
-                    <label>Retail</label>
-                </value>
-                <value>
-                    <fullName>Healthcare</fullName>
-                    <default>false</default>
-                    <label>Healthcare</label>
-                </value>
-                <value>
-                    <fullName>Government</fullName>
-                    <default>false</default>
-                    <label>Government</label>
-                </value>
-                <value>
-                    <fullName>FINS</fullName>
-                    <default>false</default>
-                    <label>FINS</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <label>Mapping</label>
-    <nameField>
-        <displayFormat>M-{0000}</displayFormat>
-        <label>Mapping Name</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>AE_SE_Mappings</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>AE/SE Mappings</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>User__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>AE/SE Mappings User</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
     </nameField>
-    <pluralLabel>Mappings</pluralLabel>
+    <pluralLabel>AE/SE Mappings</pluralLabel>
+    <recordTypeTrackFeedHistory>true</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>AE_Mappings</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+        <description>Lists all SEs mapped to specific AE</description>
+        <label>AE Mappings</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>SE_Mappings</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+        <description>All AEs that are mapped to one particular SE</description>
+        <label>SE Mappings</label>
+    </recordTypes>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
     <visibility>Public</visibility>
 </CustomObject>
