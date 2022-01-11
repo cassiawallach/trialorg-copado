@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>54.0</apiVersion>
+    <apiVersion>53.0</apiVersion>
+    <decisions>
+        <name>isChangedDecision2_myRule_1_Vertical_RVP_ID_c</name>
+        <label>isChangedDecision2_myRule_1_Vertical_RVP_ID_c</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>myDecision</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>isChangedRule_2_myRule_1_Vertical_RVP_ID_c</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>myVariable_old.Vertical_RVP_ID__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>myVariable_current.Vertical_RVP_ID__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision</targetReference>
+            </connector>
+            <label>isChangedRule_2_myRule_1_Vertical_RVP_ID_c</label>
+        </rules>
+    </decisions>
     <decisions>
         <processMetadataValues>
             <name>index</name>
@@ -15,9 +47,95 @@
         <defaultConnectorLabel>default</defaultConnectorLabel>
         <rules>
             <name>myRule_1</name>
-            <conditionLogic>and</conditionLogic>
+            <conditionLogic>or</conditionLogic>
             <conditions>
-                <leftValueReference>formula_myRule_1</leftValueReference>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Picklist</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>myVariable_current.Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Active</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>isChangedRule_2_myRule_1_Vertical_RVP_ID_c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -26,7 +144,7 @@
             <connector>
                 <targetReference>myRule_1_A1</targetReference>
             </connector>
-            <label>New Mapping</label>
+            <label>New or Active Mapping</label>
         </rules>
     </decisions>
     <description>PB for Mapping Object</description>
@@ -34,33 +152,58 @@
         <processMetadataValues>
             <name>originalFormula</name>
             <value>
-                <stringValue>IF(ISPICKVAL([Mapping__c].Vertical__c, &quot;US CRT&quot;), $CustomMetadata.Vertical_RVP__mdt.US_CRT_RVP.RVP_UserId__c, 
+                <stringValue>CASE([Mapping__c].Vertical__c ,
+&quot;US CRT&quot;, $CustomMetadata.Vertical_RVP__mdt.US_CRT_RVP.RVP_UserId__c,
+&quot;Essentials &amp; Non-AOV&quot;, $CustomMetadata.Vertical_RVP__mdt.Essentials_Non_AOV_RVP.RVP_UserId__c,
+&quot;Core&quot;, $CustomMetadata.Vertical_RVP__mdt.Core_RVP.RVP_UserId__c,
+&quot;MFG and Energy&quot;, $CustomMetadata.Vertical_RVP__mdt.MFG_Energy_RVP.RVP_UserId__c,
+&quot;Government&quot;, $CustomMetadata.Vertical_RVP__mdt.Government_RVP.RVP_UserId__c,
+&quot;FINS&quot;, $CustomMetadata.Vertical_RVP__mdt.FINS_RVP.RVP_UserId__c,
+&quot;ANZ&quot;, $CustomMetadata.Vertical_RVP__mdt.ANZ_RVP.RVP_UserId__c,
+&quot;UK &amp; North Europe&quot;, $CustomMetadata.Vertical_RVP__mdt.UK_North_Europe_RVP.RVP_UserId__c,
+&quot;South Europe&quot;, $CustomMetadata.Vertical_RVP__mdt.South_Europe_RVP.RVP_UserId__c,
+&quot;Central Europe&quot;, $CustomMetadata.Vertical_RVP__mdt.Central_Europe_RVP.RVP_UserId__c,
+&quot;Italy&quot;, $CustomMetadata.Vertical_RVP__mdt.Italy_RVP.RVP_UserId__c,
+&quot;EMEA CRT&quot;, $CustomMetadata.Vertical_RVP__mdt.EMEA_CRT_RVP.RVP_UserId__c,
 
-IF(ISPICKVAL([Mapping__c].Vertical__c, &quot;Core&quot;), $CustomMetadata.Vertical_RVP__mdt.Core_RVP.RVP_UserId__c, &quot;&quot;
-)
-)</stringValue>
+&quot;High Tech&quot;,
+IF( ISPICKVAL([Mapping__c].Sub_Vertical__c ,&quot;High Tech&quot;), $CustomMetadata.Vertical_RVP__mdt.High_Tech_RVP.RVP_UserId__c, $CustomMetadata.Vertical_RVP__mdt.High_Tech_Strategic_RVP.RVP_UserId__c),
+
+&quot;HLS&quot;,
+IF(ISPICKVAL([Mapping__c].Sub_Vertical__c, &quot;Pharma/MedTech&quot;),
+$CustomMetadata.Vertical_RVP__mdt.HLS_Pharma_RVP.RVP_UserId__c,
+$CustomMetadata.Vertical_RVP__mdt.HLS_Payer_RVP.RVP_UserId__c),
+
+&quot;&quot;)</stringValue>
             </value>
         </processMetadataValues>
-        <name>formula_2_myRule_1_A1_8539320839</name>
+        <name>formula_3_myRule_1_A1_7128328180</name>
         <dataType>String</dataType>
-        <expression>IF(ISPICKVAL({!myVariable_current.Vertical__c}, &quot;US CRT&quot;), {!$CustomMetadata.Vertical_RVP__mdt.US_CRT_RVP.RVP_UserId__c}, 
+        <expression>CASE({!myVariable_current.Vertical__c} ,
+&quot;US CRT&quot;, {!$CustomMetadata.Vertical_RVP__mdt.US_CRT_RVP.RVP_UserId__c},
+&quot;Essentials &amp; Non-AOV&quot;, {!$CustomMetadata.Vertical_RVP__mdt.Essentials_Non_AOV_RVP.RVP_UserId__c},
+&quot;Core&quot;, {!$CustomMetadata.Vertical_RVP__mdt.Core_RVP.RVP_UserId__c},
+&quot;MFG and Energy&quot;, {!$CustomMetadata.Vertical_RVP__mdt.MFG_Energy_RVP.RVP_UserId__c},
+&quot;Government&quot;, {!$CustomMetadata.Vertical_RVP__mdt.Government_RVP.RVP_UserId__c},
+&quot;FINS&quot;, {!$CustomMetadata.Vertical_RVP__mdt.FINS_RVP.RVP_UserId__c},
+&quot;ANZ&quot;, {!$CustomMetadata.Vertical_RVP__mdt.ANZ_RVP.RVP_UserId__c},
+&quot;UK &amp; North Europe&quot;, {!$CustomMetadata.Vertical_RVP__mdt.UK_North_Europe_RVP.RVP_UserId__c},
+&quot;South Europe&quot;, {!$CustomMetadata.Vertical_RVP__mdt.South_Europe_RVP.RVP_UserId__c},
+&quot;Central Europe&quot;, {!$CustomMetadata.Vertical_RVP__mdt.Central_Europe_RVP.RVP_UserId__c},
+&quot;Italy&quot;, {!$CustomMetadata.Vertical_RVP__mdt.Italy_RVP.RVP_UserId__c},
+&quot;EMEA CRT&quot;, {!$CustomMetadata.Vertical_RVP__mdt.EMEA_CRT_RVP.RVP_UserId__c},
 
-IF(ISPICKVAL({!myVariable_current.Vertical__c}, &quot;Core&quot;), {!$CustomMetadata.Vertical_RVP__mdt.Core_RVP.RVP_UserId__c}, &quot;&quot;
-)
-)</expression>
+&quot;High Tech&quot;,
+IF( ISPICKVAL({!myVariable_current.Sub_Vertical__c} ,&quot;High Tech&quot;), {!$CustomMetadata.Vertical_RVP__mdt.High_Tech_RVP.RVP_UserId__c}, {!$CustomMetadata.Vertical_RVP__mdt.High_Tech_Strategic_RVP.RVP_UserId__c}),
+
+&quot;HLS&quot;,
+IF(ISPICKVAL({!myVariable_current.Sub_Vertical__c}, &quot;Pharma/MedTech&quot;),
+{!$CustomMetadata.Vertical_RVP__mdt.HLS_Pharma_RVP.RVP_UserId__c},
+{!$CustomMetadata.Vertical_RVP__mdt.HLS_Payer_RVP.RVP_UserId__c}),
+
+&quot;&quot;)</expression>
     </formulas>
-    <formulas>
-        <processMetadataValues>
-            <name>originalFormula</name>
-            <value>
-                <stringValue>ISNEW()</stringValue>
-            </value>
-        </processMetadataValues>
-        <name>formula_myRule_1</name>
-        <dataType>Boolean</dataType>
-        <expression>ISNEW()</expression>
-    </formulas>
-    <interviewLabel>Mapping_Process_Builder-1_InterviewLabel</interviewLabel>
+    <interviewLabel>Mapping_Process_Builder-6_InterviewLabel</interviewLabel>
     <label>Mapping Process Builder</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -163,12 +306,12 @@ IF(ISPICKVAL({!myVariable_current.Vertical__c}, &quot;Core&quot;), {!$CustomMeta
             </processMetadataValues>
             <field>Vertical_RVP__c</field>
             <value>
-                <elementReference>formula_2_myRule_1_A1_8539320839</elementReference>
+                <elementReference>formula_3_myRule_1_A1_7128328180</elementReference>
             </value>
         </inputAssignments>
         <object>Mapping__c</object>
     </recordUpdates>
-    <startElementReference>myDecision</startElementReference>
+    <startElementReference>isChangedDecision2_myRule_1_Vertical_RVP_ID_c</startElementReference>
     <status>Active</status>
     <variables>
         <name>myVariable_current</name>
