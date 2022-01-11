@@ -128,16 +128,22 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Mapping_Record_Page</content>
         <formFactor>Large</formFactor>
-        <type>Default</type>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Mapping_Record_Page</content>
         <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>true</allowInChatterGroups>
@@ -145,7 +151,7 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
@@ -217,14 +223,16 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Vertical__c</fullName>
+        <fullName>Sub_Vertical__c</fullName>
         <externalId>false</externalId>
-        <label>Vertical</label>
+        <label>Sub-Vertical</label>
         <required>true</required>
-        <trackHistory>false</trackHistory>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
+            <controllingField>Vertical__c</controllingField>
             <restricted>true</restricted>
             <valueSetDefinition>
                 <sorted>false</sorted>
@@ -234,9 +242,9 @@
                     <label>Copado Robotic Testing</label>
                 </value>
                 <value>
-                    <fullName>Non-AOV</fullName>
+                    <fullName>ClickDeploy, Non-AOV</fullName>
                     <default>false</default>
-                    <label>Non-AOV</label>
+                    <label>ClickDeploy, Non-AOV</label>
                 </value>
                 <value>
                     <fullName>High Tech</fullName>
@@ -244,19 +252,193 @@
                     <label>High Tech</label>
                 </value>
                 <value>
-                    <fullName>CORE</fullName>
+                    <fullName>High Tech Strategic</fullName>
                     <default>false</default>
-                    <label>CORE</label>
+                    <label>High Tech Strategic</label>
                 </value>
                 <value>
-                    <fullName>Retail</fullName>
+                    <fullName>Media+Com+PS+EDU  / CG / Cons+Real Est</fullName>
                     <default>false</default>
-                    <label>Retail</label>
+                    <label>Media+Com+PS+EDU  / CG / Cons+Real Est</label>
                 </value>
                 <value>
-                    <fullName>Healthcare</fullName>
+                    <fullName>Pharma/MedTech</fullName>
                     <default>false</default>
-                    <label>Healthcare</label>
+                    <label>Pharma/MedTech</label>
+                </value>
+                <value>
+                    <fullName>Payer/Provider</fullName>
+                    <default>false</default>
+                    <label>Payer/Provider</label>
+                </value>
+                <value>
+                    <fullName>Government and Public Sector</fullName>
+                    <default>false</default>
+                    <label>Government and Public Sector</label>
+                </value>
+                <value>
+                    <fullName>Insurance</fullName>
+                    <default>false</default>
+                    <label>Insurance</label>
+                </value>
+                <value>
+                    <fullName>Wealth, Banking, Mortgage &amp; Lending</fullName>
+                    <default>false</default>
+                    <label>Wealth, Banking, Mortgage &amp; Lending</label>
+                </value>
+                <value>
+                    <fullName>ANZ</fullName>
+                    <default>false</default>
+                    <label>ANZ</label>
+                </value>
+                <value>
+                    <fullName>UK, Sweden, Norway, Denmark &amp; Finland</fullName>
+                    <default>false</default>
+                    <label>UK, Sweden, Norway, Denmark &amp; Finland</label>
+                </value>
+                <value>
+                    <fullName>France, Belguim, Spain, Switzerland (FR)</fullName>
+                    <default>false</default>
+                    <label>France, Belguim, Spain, Switzerland (FR)</label>
+                </value>
+                <value>
+                    <fullName>Germany, Switzerland (DE), Netherlands</fullName>
+                    <default>false</default>
+                    <label>Germany, Switzerland (DE), Netherlands</label>
+                </value>
+                <value>
+                    <fullName>MFG and Energy</fullName>
+                    <default>false</default>
+                    <label>MFG and Energy</label>
+                </value>
+                <value>
+                    <fullName>Italy</fullName>
+                    <default>false</default>
+                    <label>Italy</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>South Europe</controllingFieldValue>
+                <valueName>France, Belguim, Spain, Switzerland (FR)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Central Europe</controllingFieldValue>
+                <valueName>Germany, Switzerland (DE), Netherlands</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Italy</controllingFieldValue>
+                <valueName>Italy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>EMEA CRT</controllingFieldValue>
+                <controllingFieldValue>US CRT</controllingFieldValue>
+                <valueName>Copado Robotic Testing</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Essentials &amp; Non-AOV</controllingFieldValue>
+                <valueName>ClickDeploy, Non-AOV</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>High Tech</controllingFieldValue>
+                <valueName>High Tech</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>High Tech</controllingFieldValue>
+                <valueName>High Tech Strategic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Core</controllingFieldValue>
+                <valueName>Media+Com+PS+EDU  / CG / Cons+Real Est</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>MFG and Energy</controllingFieldValue>
+                <valueName>MFG and Energy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>HLS</controllingFieldValue>
+                <valueName>Pharma/MedTech</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>HLS</controllingFieldValue>
+                <valueName>Payer/Provider</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Government</controllingFieldValue>
+                <valueName>Government and Public Sector</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FINS</controllingFieldValue>
+                <valueName>Insurance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>FINS</controllingFieldValue>
+                <valueName>Wealth, Banking, Mortgage &amp; Lending</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>ANZ</controllingFieldValue>
+                <valueName>ANZ</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>UK &amp; North Europe</controllingFieldValue>
+                <valueName>UK, Sweden, Norway, Denmark &amp; Finland</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vertical_RVP__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Vertical RVP</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Vertical_Mappings</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Vertical__c</fullName>
+        <externalId>false</externalId>
+        <label>Vertical</label>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>US CRT</fullName>
+                    <default>false</default>
+                    <label>US CRT</label>
+                </value>
+                <value>
+                    <fullName>Essentials &amp; Non-AOV</fullName>
+                    <default>false</default>
+                    <label>Essentials &amp; Non-AOV</label>
+                </value>
+                <value>
+                    <fullName>High Tech</fullName>
+                    <default>false</default>
+                    <label>High Tech</label>
+                </value>
+                <value>
+                    <fullName>Core</fullName>
+                    <default>false</default>
+                    <label>Core</label>
+                </value>
+                <value>
+                    <fullName>MFG and Energy</fullName>
+                    <default>false</default>
+                    <label>MFG and Energy</label>
+                </value>
+                <value>
+                    <fullName>HLS</fullName>
+                    <default>false</default>
+                    <label>HLS</label>
                 </value>
                 <value>
                     <fullName>Government</fullName>
@@ -268,6 +450,36 @@
                     <default>false</default>
                     <label>FINS</label>
                 </value>
+                <value>
+                    <fullName>ANZ</fullName>
+                    <default>false</default>
+                    <label>ANZ</label>
+                </value>
+                <value>
+                    <fullName>UK &amp; North Europe</fullName>
+                    <default>false</default>
+                    <label>UK &amp; North Europe</label>
+                </value>
+                <value>
+                    <fullName>South Europe</fullName>
+                    <default>false</default>
+                    <label>South Europe</label>
+                </value>
+                <value>
+                    <fullName>Central Europe</fullName>
+                    <default>false</default>
+                    <label>Central Europe</label>
+                </value>
+                <value>
+                    <fullName>Italy</fullName>
+                    <default>false</default>
+                    <label>Italy</label>
+                </value>
+                <value>
+                    <fullName>EMEA CRT</fullName>
+                    <default>false</default>
+                    <label>EMEA CRT</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
@@ -275,6 +487,7 @@
     <nameField>
         <displayFormat>M-{0000}</displayFormat>
         <label>Mapping Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
