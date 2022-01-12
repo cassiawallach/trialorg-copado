@@ -164,12 +164,23 @@
         <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
         <label>AE User</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Value does not exist or does not match filter criteria. Please ensure that the &quot;Team Function&quot; field has been populated correctly on the AE User record.</errorMessage>
+            <filterItems>
+                <field>AE_SE_Mappings__c.User__r.Team_Function__c</field>
+                <operation>equals</operation>
+                <value>AE</value>
+            </filterItems>
+            <infoMessage>If</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
         <referenceTo>AE_SE_Mappings__c</referenceTo>
         <relationshipLabel>SE Mappings</relationshipLabel>
         <relationshipName>Mapping1</relationshipName>
         <required>true</required>
         <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -201,7 +212,7 @@
         <externalId>false</externalId>
         <label>Primary</label>
         <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -220,12 +231,22 @@
         <deleteConstraint>Restrict</deleteConstraint>
         <externalId>false</externalId>
         <label>SE User</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Value does not exist or does not match filter criteria. Please ensure that the &apos;Team Function&apos; field is populated on the SE User record</errorMessage>
+            <filterItems>
+                <field>AE_SE_Mappings__c.User__r.Team_Function__c</field>
+                <operation>equals</operation>
+                <value>SE</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
         <referenceTo>AE_SE_Mappings__c</referenceTo>
         <relationshipLabel>AE Mappings</relationshipLabel>
         <relationshipName>Mapping</relationshipName>
         <required>true</required>
         <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
@@ -254,11 +275,12 @@
     </fields>
     <fields>
         <fullName>Status__c</fullName>
+        <defaultValue>&quot;New&quot;</defaultValue>
         <externalId>false</externalId>
         <label>Status</label>
         <required>true</required>
         <trackFeedHistory>true</trackFeedHistory>
-        <trackHistory>false</trackHistory>
+        <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
