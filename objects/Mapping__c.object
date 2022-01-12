@@ -180,6 +180,19 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Duration_days__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(ISPICKVAL(Status__c, &quot;New&quot;), 0,  IF( ISPICKVAL(Status__c, &quot;Active&quot;), TODAY() -  Start_Date__c,  End_Date__c -Start_Date__c))</formula>
+        <label>Duration (days)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Primary__c</fullName>
         <defaultValue>true</defaultValue>
         <externalId>false</externalId>
@@ -313,5 +326,11 @@
     <pluralLabel>Mappings</pluralLabel>
     <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>End_date_must_be_later_than_start_date</fullName>
+        <active>true</active>
+        <errorConditionFormula>Start_Date__c &gt;=  End_Date__c</errorConditionFormula>
+        <errorMessage>Start Date must be before the End Date</errorMessage>
+    </validationRules>
     <visibility>Public</visibility>
 </CustomObject>
