@@ -166,10 +166,30 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>Primary__c</fullName>
         <defaultValue>true</defaultValue>
         <externalId>false</externalId>
         <label>Primary</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prior_Primary__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Prior Primary</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -185,6 +205,17 @@
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>true</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
     </fields>
     <fields>
         <fullName>Status__c</fullName>
@@ -215,6 +246,39 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Vertical_RVP_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Vertical__c,
+&quot;US CRT&quot;, $CustomMetadata.Vertical_RVP__mdt.US_CRT_RVP.RVP_UserId__c, 
+&quot;Essentials &amp; Non-AOV&quot;, $CustomMetadata.Vertical_RVP__mdt.Essentials_Non_AOV_RVP.RVP_UserId__c,
+&quot;Core&quot;, $CustomMetadata.Vertical_RVP__mdt.Core_RVP.RVP_UserId__c,
+&quot;MFG and Energy&quot;, $CustomMetadata.Vertical_RVP__mdt.MFG_Energy_RVP.RVP_UserId__c,
+&quot;Government&quot;, $CustomMetadata.Vertical_RVP__mdt.Government_RVP.RVP_UserId__c,
+&quot;FINS&quot;, $CustomMetadata.Vertical_RVP__mdt.FINS_RVP.RVP_UserId__c, 
+&quot;ANZ&quot;, $CustomMetadata.Vertical_RVP__mdt.ANZ_RVP.RVP_UserId__c, 
+&quot;UK &amp; North Europe&quot;, $CustomMetadata.Vertical_RVP__mdt.UK_North_Europe_RVP.RVP_UserId__c,
+&quot;South Europe&quot;, $CustomMetadata.Vertical_RVP__mdt.South_Europe_RVP.RVP_UserId__c,
+&quot;Central Europe&quot;, $CustomMetadata.Vertical_RVP__mdt.Central_Europe_RVP.RVP_UserId__c,
+&quot;Italy&quot;, $CustomMetadata.Vertical_RVP__mdt.Italy_RVP.RVP_UserId__c,
+&quot;EMEA CRT&quot;, $CustomMetadata.Vertical_RVP__mdt.EMEA_CRT_RVP.RVP_UserId__c,
+
+&quot;High Tech&quot;, 
+IF( ISPICKVAL(Sub_Vertical__c,&quot;High Tech&quot;), $CustomMetadata.Vertical_RVP__mdt.High_Tech_RVP.RVP_UserId__c, $CustomMetadata.Vertical_RVP__mdt.High_Tech_Strategic_RVP.RVP_UserId__c), 
+
+&quot;HLS&quot;,
+IF(ISPICKVAL(Sub_Vertical__c, &quot;Pharma/MedTech&quot;),
+$CustomMetadata.Vertical_RVP__mdt.HLS_Pharma_RVP.RVP_UserId__c,
+$CustomMetadata.Vertical_RVP__mdt.HLS_Payer_RVP.RVP_UserId__c),  
+
+&quot;&quot;)</formula>
+        <label>Vertical RVP ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Vertical__c</fullName>
