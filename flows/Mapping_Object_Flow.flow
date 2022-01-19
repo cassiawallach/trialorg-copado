@@ -4,7 +4,7 @@
         <name>New_SE_AE_Mapping_Email</name>
         <label>New SE/AE Mapping Email</label>
         <locationX>710</locationX>
-        <locationY>1703</locationY>
+        <locationY>1823</locationY>
         <actionName>emailSimple</actionName>
         <actionType>emailSimple</actionType>
         <flowTransactionModel>CurrentTransaction</flowTransactionModel>
@@ -32,7 +32,7 @@
         <name>Collect_Email_Addresses</name>
         <label>Collect Email Addresses</label>
         <locationX>710</locationX>
-        <locationY>1583</locationY>
+        <locationY>1703</locationY>
         <assignmentItems>
             <assignToReference>New_Mapping_Email_Recipients</assignToReference>
             <operator>Add</operator>
@@ -62,7 +62,7 @@
         <name>Primary_Mapping_Check</name>
         <label>Primary Mapping Check</label>
         <locationX>842</locationX>
-        <locationY>1103</locationY>
+        <locationY>1223</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Primary</name>
@@ -84,7 +84,7 @@
         <name>Status_Check</name>
         <label>Status Check</label>
         <locationX>402</locationX>
-        <locationY>408</locationY>
+        <locationY>528</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>Start_Date_Today</name>
@@ -172,7 +172,7 @@
         <name>Get_AE_User_Record</name>
         <label>Get AE User Record</label>
         <locationX>710</locationX>
-        <locationY>1463</locationY>
+        <locationY>1583</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Collect_Email_Addresses</targetReference>
@@ -192,10 +192,38 @@
         </outputAssignments>
     </recordLookups>
     <recordLookups>
+        <name>Get_Parent_AESE_Records</name>
+        <label>Get Parent AESE Records</label>
+        <locationX>402</locationX>
+        <locationY>408</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Status_Check</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>User__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AE_User__r.User__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>User__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.SE_User__r.User__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>AE_SE_Mappings__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <name>Get_RVP_Email</name>
         <label>Get RVP Email</label>
         <locationX>710</locationX>
-        <locationY>1223</locationY>
+        <locationY>1343</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Get_SE_User_Record</targetReference>
@@ -218,7 +246,7 @@
         <name>Get_SE_User_Record</name>
         <label>Get SE User Record</label>
         <locationX>710</locationX>
-        <locationY>1343</locationY>
+        <locationY>1463</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Get_AE_User_Record</targetReference>
@@ -243,7 +271,7 @@
         <locationX>402</locationX>
         <locationY>288</locationY>
         <connector>
-            <targetReference>Status_Check</targetReference>
+            <targetReference>Get_Parent_AESE_Records</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -292,7 +320,7 @@
         <name>Status_Active</name>
         <label>Status = Active</label>
         <locationX>842</locationX>
-        <locationY>983</locationY>
+        <locationY>1103</locationY>
         <connector>
             <targetReference>Primary_Mapping_Check</targetReference>
         </connector>
@@ -324,7 +352,7 @@
         <name>Status_New</name>
         <label>Status = New</label>
         <locationX>50</locationX>
-        <locationY>528</locationY>
+        <locationY>648</locationY>
         <inputAssignments>
             <field>Status__c</field>
             <value>
@@ -365,7 +393,7 @@
         </scheduledPaths>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Draft</status>
     <textTemplates>
         <name>NewAESEMappingEmailSubject</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>

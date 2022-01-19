@@ -19,6 +19,10 @@
                 <behavior>Edit</behavior>
                 <field>Backup_SE__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Active_Primary_Mappings__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -115,7 +119,6 @@
         <excludeButtons>MassChangeOwner</excludeButtons>
         <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
-        <fields>Active_Primary_Mappings_RUH__c</fields>
         <relatedList>AE_SE_Mappings__c.Backup_SE__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
