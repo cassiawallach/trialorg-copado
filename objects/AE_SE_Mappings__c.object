@@ -194,6 +194,20 @@
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>Primary_Mapping__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Mapping</label>
+        <referenceTo>Mapping__c</referenceTo>
+        <relationshipLabel>Primary Mapping</relationshipLabel>
+        <relationshipName>Primary_Mappings</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>User__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
